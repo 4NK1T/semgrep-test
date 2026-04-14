@@ -1,0 +1,10 @@
+name: Hello Test
+on:
+  push:
+    branches: [feature/add-app]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "direct workflow works"
